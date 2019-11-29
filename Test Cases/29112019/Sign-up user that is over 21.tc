@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Sign-up user that is over 21</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e11d5f3f-7e62-4db5-be5e-790b6e2164a4</testCaseGuid>
+</TestCaseEntity>
