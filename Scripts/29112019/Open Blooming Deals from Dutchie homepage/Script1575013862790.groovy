@@ -33,3 +33,5 @@ Mobile.tap(findTestObject('Captured dispensaries/android.view.View0 - Blooming D
 
 Mobile.closeApplication()
 
+
+

@@ -4,6 +4,12 @@
    <name>android.view.View0 - Mule Fuel THC 24.27CBD 0.08 1g 12.00 18 oz 40.00 14 oz 80.00 12 oz 140.00 1 oz 250.00</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.view.View' and (text() = 'Mule Fuel THC: 24.27%  |  CBD: 0.08% 1g $12.00 1/8 oz $40.00 1/4 oz $80.00 1/2 oz $140.00 1 oz $250.00' or . = 'Mule Fuel THC: 24.27%  |  CBD: 0.08% 1g $12.00 1/8 oz $40.00 1/4 oz $80.00 1/2 oz $140.00 1 oz $250.00') and @x = '0' and @y = '1872']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -98,14 +104,14 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
       <value>0</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>

@@ -18,25 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 //Before starting test case - clear history on mobile device
 WebUI.callTestCase(findTestCase('29112019/Open Seattle dispensaries'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication('com.android.chrome')
-
 Mobile.tap(findTestObject('Have a Heart dispensary/android.view.View0 - Have a Heart (Greenwood) Delivery closed Pickup available - 6.0 Miles Away'), 
     0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.scrollToText('Do-Si-Pop - Willie\'s Reserve', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Have a Heart dispensary/android.view.View0 - Do-Si-Pop - Willies Reserve Hybrid THC 18.93 1g 10.00 18 oz 30.00'), 
+Mobile.tap(findTestObject('Animal product/android.view.View0 - Allen Wrench - Artizen Sativa THC 22.9CBD 0.06 1g 12.00 18 oz 39.00'), 
     0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.switchToLandscape()
 
-Mobile.tap(findTestObject('Have a Heart dispensary/android.widget.Button0 - ADD TO CART - 10.00'), 0)
+Mobile.switchToPortrait()
 
-Mobile.tap(findTestObject('Have a Heart dispensary/android.view.View0 (1)'), 0)
+Mobile.tap(findTestObject('Animal product/android.widget.Button0 - ADD TO CART - 12.00'), 0)
 
-Mobile.closeApplication()
+Mobile.tap(findTestObject('Checkout/android.view.View0 - Pickup'), 0)
 

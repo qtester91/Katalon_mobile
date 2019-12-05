@@ -16,7 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //Before starting test - clear history on mobile device
-
 Mobile.startExistingApplication('com.android.chrome')
 
 Mobile.tap(findTestObject('Login Vendy/android.widget.EditText0 - Search or type web address'), 0)
@@ -37,6 +36,4 @@ Mobile.setText(findTestObject('Login Vendy/android.widget.EditText0'), 'qtester9
 Mobile.setText(findTestObject('Login Vendy/android.widget.EditText0 (1)'), 'validpassword', 0)
 
 Mobile.tap(findTestObject('Login Vendy/android.widget.Button0 - LOG IN (1)'), 0)
-
-Mobile.closeApplication()
 

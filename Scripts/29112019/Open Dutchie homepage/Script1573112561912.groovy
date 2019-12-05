@@ -24,11 +24,3 @@ Mobile.setText(findTestObject('Open Dutchie homepage/android.widget.EditText0 - 
 
 Mobile.tap(findTestObject('Open Dutchie homepage/android.widget.TextView0 - qa.dutchie.dev'), 0)
 
-Mobile.switchToLandscape()
-
-Mobile.switchToPortrait()
-
-Mobile.tap(findTestObject('Open Dutchie homepage/android.widget.Image0 - Dutchie logo'), 0)
-
-Mobile.closeApplication()
-

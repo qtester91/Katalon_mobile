@@ -18,8 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 //Before starting test - clear history on mobile device
 WebUI.callTestCase(findTestCase('29112019/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication('com.android.chrome')
-
 Mobile.tap(findTestObject('Open Seattle dispensaries/android.widget.EditText0 (1)'), 0)
 
 Mobile.setText(findTestObject('Open Seattle dispensaries/android.widget.EditText0 (2)'), 'Seattle, WA', 0)
@@ -29,6 +27,4 @@ Mobile.tap(findTestObject('Open Seattle dispensaries/android.view.View0 - Seattl
 Mobile.switchToLandscape()
 
 Mobile.switchToPortrait()
-
-Mobile.closeApplication()
 
