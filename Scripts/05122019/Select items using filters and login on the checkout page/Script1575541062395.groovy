@@ -49,32 +49,32 @@ Mobile.tap(findTestObject('Oregrown - Edibles/android.widget.Spinner0 - Specials
 
 Mobile.tap(findTestObject('Oregrown - Edibles/android.widget.CheckedTextView0 - Edibles'), 0)
 
-Mobile.tap(findTestObject('Oregrown - Edibles/android.view.View0 - Wyld  Single Indica Peach White Chocolate  5mg THC 5 mg 2.50'), 
+Mobile.tap(findTestObject('Items listed using filters/android.view.View0 - Moxey Zen 251 CBDTHC Peppermint Mints THC 20 mgCBD 500 mg 40.00 (1)'), 
     0)
+
+Mobile.tap(findTestObject('Items listed using filters/android.view.View0'), 0)
 
 Mobile.switchToLandscape()
 
 Mobile.switchToPortrait()
 
-Mobile.tap(findTestObject('Oregrown - Edibles/android.view.View0'), 0)
+Mobile.tap(findTestObject('Items listed using filters/android.widget.Spinner0 - Topicals'), 0)
 
-Mobile.tap(findTestObject('Filter Seeds on Oregrown/android.widget.Spinner0 - Topicals'), 0)
+Mobile.tap(findTestObject('Items listed using filters/android.widget.CheckedTextView0 - Vaporizers'), 0)
 
-Mobile.tap(findTestObject('Filter Seeds on Oregrown/android.widget.CheckedTextView0 - Seeds'), 0)
-
-Mobile.tap(findTestObject('Filter Seeds on Oregrown/android.view.View0 - Don Carlos Seeds 3.00'), 0)
-
-Mobile.tap(findTestObject('Add item from Vaporizers type on Oregrown/android.widget.Spinner0 - Seeds'), 0)
-
-Mobile.tap(findTestObject('Add item from Vaporizers type on Oregrown/android.widget.CheckedTextView0 - Vaporizers'), 0)
-
-Mobile.tap(findTestObject('Add item from Vaporizers type on Oregrown/android.view.View0 - Angel Fire Wings 0.5g CBD Disposable - New York Sour Diesel .5g- 100.00'), 
+Mobile.tap(findTestObject('Items listed using filters/android.view.View0 - Echo Electuary - Critical Cheese 1g Cartridge 1g- 50.00'), 
     0)
 
-Mobile.tap(findTestObject('Add item from Vaporizers type on Oregrown/android.view.View0 - 3'), 0)
+Mobile.tap(findTestObject('Items listed using filters/android.widget.Spinner0 - Vaporizers'), 0)
 
-Mobile.tap(findTestObject('Add item from Vaporizers type on Oregrown/android.widget.Button0 - PROCEED TO CHECKOUT - 105.50'), 
+Mobile.tap(findTestObject('Items listed using filters/android.widget.CheckedTextView0 - Tinctures'), 0)
+
+Mobile.tap(findTestObject('Items listed using filters/android.view.View0 - Select  Unflavored 11 Tincture  1oz THC 447 mgCBD 516 mg 70.00'), 
     0)
+
+Mobile.tap(findTestObject('Items listed using filters/android.view.View0 - 3'), 0)
+
+Mobile.tap(findTestObject('Items listed using filters/android.widget.Button0 - PROCEED TO CHECKOUT - 160.00'), 0)
 
 Mobile.tap(findTestObject('Login with existing account on the Checkout page/android.view.View0 - Login'), 0)
 
@@ -96,59 +96,5 @@ Mobile.tap(findTestObject('Proceed to Checkout from Have a Heart/android.widget.
 
 Mobile.tap(findTestObject('Proceed to Checkout from Have a Heart/android.widget.Button0'), 0)
 
-device_Height = Mobile.getDeviceHeight()
-
-'Get Width Height and Store in device_Width variable'
-
-device_Width = Mobile.getDeviceWidth()
-
-
-'Storing the startX value by dividing device width by 2. Because x coordinates are constant for Vertical Swiping'
-
-int startX = device_Width / 2
-
-
-'Here startX and endX values are equal for vertical Swiping for that assigning startX value to endX'
-
-int endX = startX
-
-
-'Storing the startY value'
-
-int startY = device_Height * 0.30
-
-
-'Storing the endY value'
-
-int endY = device_Height * 0.70
-
-'Swipe Vertical from top to bottom'
-
-Mobile.swipe(startX, endY, endX, startY)
-
-
-'Swipe Vertical from bottom to top'
-
-Mobile.swipe(startX, startY, endX, endY)
-
-
-Mobile.tap(findTestObject('Clear history/android.widget.ImageButton0'), 0)
-
-Mobile.tap(findTestObject('Clear history/android.widget.TextView0 - History'), 0)
-
-Mobile.tap(findTestObject('Clear history/android.widget.Button0 - Clear browsing data'), 0)
-
-Mobile.tap(findTestObject('Clear history/android.widget.Button0 - Clear data'), 0)
-
-Mobile.tap(findTestObject('Clear history/android.widget.TextView0'), 0)
-
-Mobile.tapAndHold(findTestObject('Close tab/android.widget.ImageButton0'), 0, 0)
-
-Mobile.tap(findTestObject('Close tab/android.widget.TextView0 - Close tab'), 0)
-
-Mobile.tap(findTestObject('Add tab/android.widget.ImageButton0'), 0)
-
-Mobile.closeApplication()
-
-
+WebUI.callTestCase(findTestCase('06122019/Clean browsing history'), [:], FailureHandling.STOP_ON_FAILURE)
 
