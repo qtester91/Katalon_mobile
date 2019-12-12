@@ -6,15 +6,19 @@
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'android.widget.EditText' and @x = '93' and @y = '624']</value>
+         <key>XPATH</key>
+         <value>//input[@name='firstName']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>//*[@id=&quot;customer&quot;]/div[2]/div[1]/div/div[1]/div/input</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.EditText' and @x = '93' and @y = '624']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

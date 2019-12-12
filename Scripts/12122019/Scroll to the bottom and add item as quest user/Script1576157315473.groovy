@@ -15,3 +15,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+Mobile.startExistingApplication('com.android.chrome')
+
+Mobile.tap(findTestObject('Open Dutchie/Navigate to Dutchie via Chrome/android.widget.EditText0 - Search or type web address'), 
+    2)
+
+Mobile.setText(findTestObject('Open Dutchie/Navigate to Dutchie via Chrome/android.widget.EditText0 - Search or type web address (1)'), 
+    'qa.dutchie.dev', 0)
+
+Mobile.tap(findTestObject('Open Dutchie/Navigate to Dutchie via Chrome/android.widget.TextView0 - qa.dutchie.dev'), 2)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.scrollToText('Blooming Deals', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Dutchie homepage/Blooming Deals link'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.scrollToText('Pre-Rolls', FailureHandling.STOP_ON_FAILURE)
+
+not_run: Mobile.tap(findTestObject('Objects collected from web/Cannabis Nation Pre-Roll 0.5g'), 0)
+
+not_run: Mobile.tap(findTestObject('Checkout/android.view.View0 - Pickup'), 0)
+
+not_run: Mobile.tap(findTestObject(null), 0)
+

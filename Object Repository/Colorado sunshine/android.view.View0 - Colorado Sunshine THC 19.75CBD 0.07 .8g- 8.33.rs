@@ -6,15 +6,19 @@
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'android.view.View' and (text() = 'Colorado Sunshine THC: 19.75%  |  CBD: 0.07% .8g  -   $8.33' or . = 'Colorado Sunshine THC: 19.75%  |  CBD: 0.07% .8g  -   $8.33')]</value>
+         <key>XPATH</key>
+         <value>#products-container > div:nth-child(3) > div > div.products-grid__ProductCardGrid-wiekrm-0.dgxldW > div:nth-child(4) > a > div > div > div.product-weights__Container-zwypum-0.hMPeYa > div > div.weight__Container-mazv5g-1.cdUZBS</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>//*[@id=&quot;products-container&quot;]/div[3]/div/div[2]/div[4]/a/div/div/div[2]/div/div[1]/div[2]</value>
+         <value>#products-container > div:nth-child(3) > div > div.products-grid__ProductCardGrid-wiekrm-0.dgxldW > div:nth-child(4) > a > div > div > div.product-information__Container-m4y3za-0.KMfFk</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.view.View' and (text() = 'Colorado Sunshine THC: 19.75%  |  CBD: 0.07% .8g  -   $8.33' or . = 'Colorado Sunshine THC: 19.75%  |  CBD: 0.07% .8g  -   $8.33') and @x = '0' and @y = '1041']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -108,14 +112,14 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
       <value>0</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>

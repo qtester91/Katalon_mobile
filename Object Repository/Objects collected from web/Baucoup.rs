@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Baucoup</name>
+   <tag></tag>
+   <elementGuidId>653d9c9a-a54e-4d3d-9903-c4e44721a472</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[1]/div[2]/div[2]/div[5]/div[2]/div[2]/div[5]/div/div[2]/div[1]/a/div/div/div[2]/div/div[1]/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>/html/body/div[1]/div[1]/div[2]/div[2]/div[5]/div[2]/div[2]/div[5]/div/div[2]/div[1]/a/div/div/div[2]/div/div[1]/div[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
